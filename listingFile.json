@@ -1,0 +1,42 @@
+{
+    "marketplace": "vestiairecollective",
+    "listing_id": "1",
+    "margin": 0.1,
+    "credentials": {
+            "username": "test@yopmail.com",
+            "password": "123456"
+        },
+
+    "items": [
+        {
+            "brand": "7 For All Mankind",
+            "brand_tier": "Mid-tier",
+            "category": "Dresses",
+            "color": "Black",
+            "condition": "LIKE_NEW",
+            "description": "Black 7 For All Mankind this dress is the ultimate, pretty item you need to bag right now.",
+            "gender": "Female",
+            "images": ["https://s3.eu-west-1.amazonaws.com/twig.sales/9e426a58ea934e1da2c1f84976ae642c", "https://s3.eu-west-1.amazonaws.com/twig.sales/95cfad32ba364087969d4387e74faa0a", "https://s3.eu-west-1.amazonaws.com/twig.sales/c162f202c5a54dba801b1c361c304710"],
+            "item_id": "61ba7e17ebacd10012c18dd4",
+            "material": "Mixed Fabric",
+            "price": 14.24,
+            "size": 10,
+            "title": "Dress"
+        },
+        {
+            "brand": "Gucci",
+            "brand_tier": "Mid-tier",
+            "category": "Dresses",
+            "color": "Black",
+            "condition": "LIKE_NEW",
+            "description": "Black Gucci this dress is the ultimate, pretty item you need to bag right now.",
+            "gender": "Female",
+            "images": ["https://s3.eu-west-1.amazonaws.com/twig.sales/9e426a58ea934e1da2c1f84976ae642c", "https://s3.eu-west-1.amazonaws.com/twig.sales/95cfad32ba364087969d4387e74faa0a", "https://s3.eu-west-1.amazonaws.com/twig.sales/c162f202c5a54dba801b1c361c304710"],
+            "item_id": "61ba7e17ebacd10012c18dd5",
+            "material": "Mixed Fabric",
+            "price": 155.36,
+            "size": 10,
+            "title": "Dress"
+        }
+    ]
+}
