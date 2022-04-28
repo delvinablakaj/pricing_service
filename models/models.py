@@ -1,47 +1,38 @@
 from datetime import datetime
+from typing import Optional, List
 from pydantic import BaseModel, Field
-from typing import Optional,List
 
 
-# class Item(BaseModel):
-#     item_id: str = Field(...)
+class Inventory(BaseModel):
+    itemId: str = Field(...)
+    condition: str = Field(...)
+    category: str = Field(...)
+    subcategory: Optional[str]
+    material: str = Field(...)
+    brand: str = Field(...)
+    gender: str = Field(...)
+    description: str = Field(...)
+    price: float = Field(...)
+    size: str = Field(...)
+    title: str = Field(...)
+    color: str = Field(...)
+    images: list = Field(...)
+    temp_category: Optional[str]
+    tier: Optional[str]
+    created_at: Optional[datetime]
 
-
-class PricingRequest(BaseModel):
-    id: str
-    listing_id = Optional[str]
-
-    createdAt: datetime = datetime.now()
-
-    class Config:
-        arbitrary_types_allowed = True
-
-
-class Item(BaseModel):
-    brand: str
-    brand_tier: str
-    category: str
-    color: str
-    condition: str
-    description:str
-    gender: str
-    images: List[str]
-    item_id:str
-    material: str
-    price: float
-    size: str
-    title: str
-
-class Credentials(BaseModel):
-    username: str="test@yopmail.com"
-    password: str= "123456"
 
 class RequestPricing(BaseModel):
-    marketplace: str
-    listing_id: str
-    margin: float=0.1
-    credentials: Credentials
-    items: List[Item]
+    listingId: str
+    status: Optional[str]
+    margin: Optional[float]
+    marketplace: str = Field(...)
+    deleted: Optional[bool]
+    inventory: List[Inventory] = Field(...)
+    items: Optional[List[object]]
+    createdAt: datetime = datetime.now()
+    events: list = []
 
     class Config:
         arbitrary_types_allowed = True
+
